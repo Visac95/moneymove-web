@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Money Move</title>
+  <script>
+    window.onload = function() {
+      // 1. Obtener parámetros (ej: ?c=123)
+      const urlParams = new URLSearchParams(window.location.search);
+      const code = urlParams.get('c');
+
+      // 2. TUS LINKS (Configúralos aquí)
+      // El esquema de tu app Flutter (debe coincidir con AndroidManifest)
+      const appScheme = "moneymove://join?c=" + (code || "");
+
+      // Tu link de Play Store (cámbialo por el real cuando la subas)
+      // Si no tienes link aún, pon google.com por mientras para probar
+      const storeLink = "https://google.com";
+
+      // 3. Redirección inteligente
+      // Intenta abrir la app...
+      window.location.href = appScheme;
+
+      // Si en 2 seg no abre, manda a la tienda
+      setTimeout(function() {
+        window.location.href = storeLink;
+      }, 2000);
+    };
+  </script>
+</head>
+<body style="background: #000; color: #fff; font-family: sans-serif; text-align: center; padding-top: 50px;">
+  <h2>Abriendo Money Move...</h2>
+  <p>Si no redirige automáticamente, <a href="https://play.google.com/store/apps/details?id=com.visacstudio.moneymove" style="color: #4CAF50;">haz clic aquí</a>.</p>
+</body>
+</html>
