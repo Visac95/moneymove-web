@@ -5,8 +5,7 @@
       "namespace": "android_app",
       "package_name": "com.visacstudio.moneymove",
       "sha256_cert_fingerprints": [
-        "CC:66:0F:BF:81:E0:80:8D:B6:F3:29:82:7B:F9:4C:A1:C7:57:C2:74:2B:A2:E7:12:31:BD:E9:76:01:DC:B6:D5",
-        "45:D3:C0:A5:87:CB:94:54:C3:D4:D4:A7:7E:B8:8B:94:8C:23:71:F8:0F:57:DE:F4:76:42:5E:A0:93:8B:EF:9F"
+        "CC:66:0F:BF:81:E0:80:8D:B6:F3:29:82:7B:F9:4C:A1:C7:57:C2:74:2B:A2:E7:12:31:BD:E9:76:01:DC:B6:D5"
       ]
     }
   }
